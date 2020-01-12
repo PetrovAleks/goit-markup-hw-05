@@ -29,6 +29,44 @@ h1 {
   display: none;
 }
 
+
+/* 
+title
+ */
+
+
+.title {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  letter-spacing: -0.02em;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #515151;
+  margin-bottom: 120px;
+  margin-top: 0px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  background-image: url(/img/Rectangle\ 8\ copy\ 2.png);
+  width: 164px;
+  height: 15px;
+
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+
+
 /* 
 Стили списка
  */
@@ -52,26 +90,30 @@ h1 {
 Навигация и лого
  */
 .nav {
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .flex-navigation {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
+
+.navigation-padding {
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+
 
 /* 
   User Навигация 
  */
-.user-nav {
-  display: flex;
 
+.user-nav {
   margin: 0px;
   padding: 23px 0px;
-
   background-color: #1abc9c;
-
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -301,6 +343,10 @@ p.bold-text {
   margin: 0px;
 }
 
+/* 
+Icons
+ */
+
 .setting::before {
   position: absolute;
   content: "";
@@ -357,77 +403,243 @@ p.bold-text {
   left: 50%;
   transform: translateX(-50%);
 
-  top: -119px;
+  top: -120px;
 
 }
 
 
 /* 
-Секция FEATURED PRODUCTS
+  New Collection
 */
 
-.title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 48px;
-  letter-spacing: -0.02em;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-align: center;
+.collection {
+  margin: 0px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #e9f0fd;
 
-  color: #515151;
-  margin-bottom: 120px;
-  margin-top: 0px;
+}
 
-  margin-left: auto;
-  margin-right: auto;
+.collection-item:nth-last-child(n+1) {
+  margin-bottom: 0px;
 }
 
 /* 
-Список Товаров 
+  Cards
+*/
+
+.card-overlay::before {
+  display: none;
+  content: "";
+  position: absolute;
+  width: 235px;
+  height: 230px;
+  background-color: rgba(15, 1, 1, 0.55);
+  border: 10px solid rgba(255, 255, 255, 0.55);
+
+}
+
+
+.card-liste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.card-item {
+  flex-basis: 255px;
+  overflow: hidden;
+  flex-basis: calc(100% / 4 - 22.5px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.card-item:nth-last-child(4n+1) {
+  margin-right: 0px;
+}
+
+.card-item:nth-last-child(-n+4) {
+  margin-bottom: 0px;
+
+}
+
+
+.img-container {
+  position: relative;
+  height: 250px;
+
+}
+
+.img-card {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+}
+
+.bg-color {
+  background-color: #e9f0fd;
+}
+
+/* 
+  Icons Card
+*/
+
+.actions {
+  display: none;
+  flex-wrap: wrap;
+  width: 170px;
+  margin: 0px;
+  padding: 0px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+
+.button-icon {
+  position: relative;
+  border: 1px solid #fff;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+}
+
+.icon-like::before {
+  content: "";
+  background-image: url(/img/like.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 26px;
+  height: 25px;
+
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 4;
+
+}
+
+.icon-basket::before {
+  content: "";
+  background-image: url(/img/basket.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 35px;
+  height: 30px;
+
+  top: 8px;
+  left: 12px;
+
+
+  z-index: 4;
+
+}
+
+.icon-arrow::before {
+  content: "";
+  background-image: url(/img/arrows.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 4;
+
+}
+
+.icon-clock::before {
+  content: "";
+  background-image: url(/img/clock.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 4;
+
+}
+
+
+.button-icon:nth-last-child(2) {
+  margin-right: 0px;
+}
+
+.button-add {
+  position: relative;
+  border: 1px solid #fff;
+  width: 170px;
+
+  background-color: rgba(255, 255, 255, 0);
+  margin-bottom: 10px;
+
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: -0.02em;
+  background-color: #323232;
+  padding: 17px;
+
+}
+
+
+
+
+/* 
+    Products
  */
 .products {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.products-liste {
-  display: flex;
-  flex-wrap: wrap;
-
-  justify-content: center;
-}
-
-.products-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.products-item:nth-child(4n) {
-  margin-right: 0px;
-}
-
-.products-item:nth-child(n + 5) {
-  margin-bottom: 0px;
-}
-
-.link-products-item {
-  display: flex;
-  flex-direction: column;
-}
-
 /*
- HOVER-FOCUS PRODUCTS
+ HOVER-FOCUS CARD
   */
 
-.products-item:hover .wrapper-name-products,
-.products-item:focus .wrapper-name-products {
+.card-item:hover .wrapper-name-products,
+.card-item-item:focus .wrapper-name-products {
   background-color: #1abc9c;
 }
 
-.products-item:hover .cost,
-.products-item:focus .cost {
+.card-item:hover .cost,
+.card-item:focus .cost {
   background-color: #7fd9c7;
 }
+
+.card-item:hover .card-overlay::before,
+.card-item:focus .card-overlay::before {
+  display: block;
+}
+
+.card-item:hover .actions,
+.card-item:focus .actions {
+  display: flex;
+}
+
+
 
 /* 
 Имя товара и цена
@@ -435,10 +647,10 @@ p.bold-text {
 
 .wrapper-name-products {
   display: flex;
-
-  justify-content: space-between;
   align-items: center;
   background-color: #323232;
+  position: relative;
+  z-index: 3;
 }
 
 .name-products {
@@ -456,6 +668,7 @@ p.bold-text {
 
 .cost {
   padding: 14px;
+  margin-left: auto;
 
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
@@ -472,6 +685,7 @@ p.bold-text {
 .news {
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: #e9f0fd;
 }
 
 .flex-position {
