@@ -510,7 +510,7 @@ Icons
   border: 1px solid #fff;
   width: 50px;
   height: 50px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(26, 188, 156, 0);
   margin-right: 10px;
   margin-bottom: 10px;
 
@@ -607,6 +607,7 @@ Icons
 
 
 
+
 /* 
     Products
  */
@@ -637,6 +638,19 @@ Icons
 .card-item:hover .actions,
 .card-item:focus .actions {
   display: flex;
+}
+
+.button-icon:hover,
+.button-icon:focus {
+  background-color: rgba(26, 188, 156, 1);
+  cursor: pointer;
+}
+
+.button-add:hover,
+.button-add.focus {
+  background-color: rgba(26, 188, 156, 1);
+  cursor: pointer;
+
 }
 
 
