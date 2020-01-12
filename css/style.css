@@ -55,7 +55,7 @@ title
 .title::before {
   content: "";
   position: absolute;
-  background-image: url(/img/Rectangle\ 8\ copy\ 2.png);
+  background-image: url(../img/Rectangle\ 8\ copy\ 2.png);
   width: 164px;
   height: 15px;
 
@@ -146,7 +146,7 @@ title
   content: '';
   width: 22px;
   height: 22px;
-  background-image: url(/img/tell.png);
+  background-image: url(../img/tell.png);
   background-repeat: no-repeat;
   left: -23px;
 }
@@ -156,7 +156,7 @@ title
   content: '';
   width: 22px;
   height: 22px;
-  background-image: url(/img/email.png);
+  background-image: url(../img/email.png);
   background-repeat: no-repeat;
   left: -29px;
 }
@@ -352,7 +352,7 @@ Icons
   content: "";
   width: 66px;
   height: 66px;
-  background-image: url(/img/settig.png);
+  background-image: url(../img/settig.png);
   background-repeat: no-repeat;
 
   left: 50%;
@@ -367,7 +367,7 @@ Icons
   content: "";
   width: 58px;
   height: 53px;
-  background-image: url(/img/money.png);
+  background-image: url(../img/money.png);
   background-repeat: no-repeat;
 
   left: 50%;
@@ -382,7 +382,7 @@ Icons
   content: "";
   width: 58px;
   height: 59px;
-  background-image: url(/img/worldw.png);
+  background-image: url(../img/worldw.png);
   background-repeat: no-repeat;
 
   left: 50%;
@@ -397,7 +397,7 @@ Icons
   content: "";
   width: 56px;
   height: 66px;
-  background-image: url(/img/shipping.png);
+  background-image: url(../img/shipping.png);
   background-repeat: no-repeat;
 
   left: 50%;
@@ -518,7 +518,7 @@ Icons
 
 .icon-like::before {
   content: "";
-  background-image: url(/img/like.png);
+  background-image: url(../img/like.png);
   background-repeat: no-repeat;
   position: absolute;
   width: 26px;
@@ -534,7 +534,7 @@ Icons
 
 .icon-basket::before {
   content: "";
-  background-image: url(/img/basket.png);
+  background-image: url(../img/basket.png);
   background-repeat: no-repeat;
   position: absolute;
   width: 35px;
@@ -550,7 +550,7 @@ Icons
 
 .icon-arrow::before {
   content: "";
-  background-image: url(/img/arrows.png);
+  background-image: url(../img/arrows.png);
   background-repeat: no-repeat;
   position: absolute;
   width: 25px;
@@ -566,7 +566,7 @@ Icons
 
 .icon-clock::before {
   content: "";
-  background-image: url(/img/clock.png);
+  background-image: url(../img/clock.png);
   background-repeat: no-repeat;
   position: absolute;
   width: 25px;
@@ -791,7 +791,7 @@ Icons
 .site-footer {
   padding-top: 100px;
   padding-bottom: 135px;
-  background-image: url(/img/bg2decor-full.png);
+  background-image: url(../img/bg2decor-full.png);
   background-repeat: repeat;
   background-color: #4ec6ab;
 
@@ -817,7 +817,7 @@ Icons
 .title-footer::before {
   content: "";
   position: absolute;
-  background-image: url(/img/Rectangle\ 8\ 1.png);
+  background-image: url(../img/Rectangle\ 8\ 1.png);
   width: 164px;
   height: 15px;
 
@@ -845,7 +845,7 @@ Icons
   width: 85px;
   height: 60px;
   background-color: #4ec6ab;
-  background-image: url(/img/arrows_button.png);
+  background-image: url(../img/arrows_button.png);
   background-repeat: no-repeat;
   background-position: center;
 }
