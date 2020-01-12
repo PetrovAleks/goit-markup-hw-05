@@ -301,7 +301,6 @@ p.bold-text {
 
 .about-list {
   display: flex;
-  margin-right: 30px;
 }
 
 .about-item {
