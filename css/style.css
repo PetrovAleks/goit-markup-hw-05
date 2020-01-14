@@ -700,6 +700,7 @@ Icons
   background-image: url(../img/arrows_button.png);
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 .button-email:hover,
 .button-email:focus {
