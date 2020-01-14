@@ -53,7 +53,7 @@ title
   content: '';
   display: block;
 
-  background-image: url(/img/s.png);
+  background-image: url(../img/s.png);
   width: 164px;
   height: 15px;
   margin: 0px auto;
@@ -235,7 +235,7 @@ title
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .wrapper-hero-content .button {
   display: block;
@@ -670,15 +670,14 @@ Icons
   margin-left: auto;
   margin-right: auto;
 }
-.title-footer::before {
+.title-footer::after {
+  background-image: url(../img/3.png);
   content: '';
-  position: absolute;
-  background-image: url(../img/rectangle\8\1png);
+  display: block;
   width: 164px;
   height: 15px;
-  top: 70px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0px auto;
+  margin-top: 20px;
 }
 .text-footer {
   text-align: center;
