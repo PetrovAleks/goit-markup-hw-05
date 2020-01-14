@@ -203,13 +203,6 @@ title
 Секция Hero
 */
 
-.hero {
-  height: 618px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-}
-
 .hero .img {
   display: block;
   max-width: 100%;
@@ -217,6 +210,11 @@ title
 }
 
 .overlay {
+  width: 1648px;
+  height: 618px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
   position: relative;
 }
 
